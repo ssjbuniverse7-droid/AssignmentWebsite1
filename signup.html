@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<body class="body2">
+    <h2 style="text-align: center; color: rgb(255, 183, 0);">Please create your username</h2>
+    <div class="divgeneral" style="color: white;">
+        <form action="/add-username" method="POST" style="text-align: center;">
+            <h5>Username:</h5>
+            <input type="text" name="username" autocomplete="off"><br>
+            <h5>Password:</h5>
+            <input type="password" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+{% endblock %}
